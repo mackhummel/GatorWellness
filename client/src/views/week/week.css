@@ -1,0 +1,229 @@
+.upload-expensePart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 85%;
+}
+.popupbby .overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+.popupbby .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  background: #fff;
+  z-index: 2;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+.popupbby.active .overlay {
+  display: block;
+}
+.popupbby.active .content {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+}
+.submit {
+  display: flex;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: #dfffd4;
+  border-radius: 0;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease-out;
+  font-family: "Nunito", sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+}
+.cancel {
+  display: flex;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: #ff9494;
+  border-radius: 0;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease-out;
+  font-family: "Nunito", sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  margin-left: 0px;
+}
+.cancel:focus {
+  outline: none;
+}
+.cancel:hover {
+  transform: scale(1.2);
+  transition-duration: 0.2s;
+}
+.submit:focus {
+  outline: none;
+}
+.submit:hover {
+  transform: scale(1.2);
+  transition-duration: 0.2s;
+}
+.cancelSubmit {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  width: 450px;
+  /* margin: auto; */
+  margin-top: 20px;
+}
+.addTitle {
+  font-family: "Nunito", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1px;
+}
+
+.num-inputs{
+  margin-top: 30px;
+  justify-content: center;
+
+}
+
+.assignmentBox {
+  height: 100px;
+  width: 150px;
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  transition: transform 0.5s; /* Animation */
+}
+
+.assignmentBox:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+
+.courseOnBox {
+  margin-bottom: 5px;
+  font-family: "Nunito", sans-serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 12px;
+}
+
+.assignmentNameOnBox {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 12px;
+  overflow-y: scroll;
+  transition: all 0.5s ease-in-out;
+}
+/* 
+.assignmentNameOnBox:hover {
+  transform: scale(1.2);
+  transition-duration: 0.35s;
+} */
+
+.timeAndDifficulty {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* .timeAndDifficulty:hover {
+  transform: scale(1.2);
+  transition-duration: 0.35s;
+} */
+
+.rateButtonOnBox {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: black;
+  font-family: "Nunito", sans-serif;
+  font-weight: normal;
+  color: white;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.rateButtonOnBox:hover {
+  /* transform: scale(1.2); */
+  /* transition-duration: 0.35s; */
+  background-color: #EDEFF7;
+  color: black;
+  cursor: pointer;
+}
+
+.rateButtonOnBox:focus {
+  outline: none;
+}
+
+.sideClassDisplay {
+  height: 100%;
+  width: 15px !important;
+  overflow-y: scroll;
+  overflow-wrap: break-word;
+  align-content: center;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: normal;
+  color: #BABABA;
+  font-size: 12px;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.middleContent {
+  height: 100%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+ .weeklyTitle {
+   font-size: 40px;
+   text-align: center;
+   font-family: "Nunito", sans-serif;
+   font-weight: bolder;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.lilShadow {
+
+  background-color: red;
+}

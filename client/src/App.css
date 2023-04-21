@@ -1,0 +1,54 @@
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position:relative;
+  height:auto;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+​
+.page-header{
+  flex-shrink:0;
+}
+
+.page-footer {
+  flex-shrink: 0;
+  left: 0;
+  margin-bottom: 10px;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+​
+.page-body {
+  flex-grow: 1;
+}
+​
+​
+.footerHeading {
+  padding-top: 25px;
+  text-align: center;
+  flex-shrink: 0;
+}
+​
+.page-footer a.active {
+  font-weight: bold;
+}
+​
+.page-footer a:hover {
+  font-weight: bold;
+}
+.page-footer a {
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-family: 'Nunito';
+}

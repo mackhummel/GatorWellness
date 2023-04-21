@@ -1,0 +1,89 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80px;
+  background: rgba(196, 196, 196, 0.01);
+  font-size: 20px;
+  align-items: center;
+}
+
+.linkTo {
+  font-family: 'Nunito', sans-serif;
+  font-weight: lighter;
+  transition: all 0.3s ease-out;
+}
+
+.linkTo:hover {
+  font-family: 'Nunito', sans-serif;
+  font-weight: bolder;
+  transform: scale(1.15);
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.header-right {
+  display: flex;
+  flex-direction: row;
+  /* margin-left: 30%; */
+  /* margin-right: 10px; */
+  align-items: center;
+  /* float: right; */
+  position: absolute;
+  right: 40px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.logo-header {
+  width: 20%;
+}
+
+.gatorRater {
+  align-self: center;
+  font-family: Nunito, sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+  margin-left: 30px;
+  transition: all 0.3s ease-out;
+}
+
+.gatorRater:hover {
+  transform: scale(1.15);
+  transition-duration: 0.3s;
+}
+
+.gatorLogo {
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
+  transition: all 0.3s ease-out;
+}
+
+.gatorLogo:hover {
+  transform: scale(1.15);
+  transition-duration: 0.3s;
+}
+
+.logoAndName {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  align-items: center;
+}
+
+.separator {
+  display: block;
+  align-items: center;
+  line-height: 80px;
+  font-family: Nunito, sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+}

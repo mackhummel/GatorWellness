@@ -1,0 +1,81 @@
+.parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+  font-weight: lighter;
+  font-family: "Nunito", sans-serif;
+  margin-top: 10px;
+}
+
+.yes {
+  background-color: black;
+  color: white;
+  margin-right: 10px;
+  width: 70px;
+  height: 40px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  font-weight: lighter;
+  font-family: "Nunito", sans-serif;
+}
+
+.no {
+  color: white;
+  background-color: black;
+  margin-right: 10px;
+  width: 70px;
+  height: 40px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: lighter;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  font-weight: lighter;
+  font-family: "Nunito", sans-serif;
+}
+.yes:focus {
+  background-color:  #EDEFF7;
+  color: black;
+  outline: none;
+}
+.no:focus {
+  background-color:  #EDEFF7;
+  color: black;
+  outline: none;
+
+}
+.yes:hover {
+  color: black;
+  background-color: #EDEFF7;
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+.yes:active {
+  background-color: green;
+}
+
+.no:hover {
+  color: black;
+  background-color: #EDEFF7;
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+.no:active {
+  background-color: red;
+}
+.inside {
+  align-self: center;
+}

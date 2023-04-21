@@ -1,0 +1,481 @@
+input.searchBox:focus {
+  outline: none;
+}
+
+input.searchBox:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+
+input.searchBox {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: white;
+  height: 70px;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: lighter;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  transition: transform 1s ease-out;
+}
+
+input.searchBox::placeholder {
+  font-size: 14px;
+}
+
+h1.commentBoard {
+  width: 500px;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  align-self: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tableContainer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  background-color: white;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
+}
+.showingResults {
+  background-color: white;
+  width: 60%;
+
+  line-height: 60px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: Nunito, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/* .classBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  width: 30px;
+  height: 10px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  background-color: white;
+} */
+
+.valid {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.addComment:hover {
+  transform: scale(1.5);
+  transition-duration: 0.2s;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.addComment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: white;
+  transition: transform 0.2s ease-out;
+  font-family: "Nunito", sans-serif;
+  font-weight: lighter;
+  font-size: 30px;
+}
+.addCommentParent {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.lbl {
+  font-family: "Nunito", sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  padding-left: 20px;
+  height: 15px;
+}
+
+textarea.popUpInput {
+
+  display: flex;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: white;
+  height: 50px;
+  min-height: 50px;
+  width: 450px;
+  font-size: 15px;
+  font-family: "Nunito", sans-serif;
+  font-weight: lighter;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 450px;
+  max-height: 100px;
+  border: 1px solid;
+}
+
+.popUpInput:focus {
+  outline: none;
+}
+
+textarea.popUpInputClass {
+  display: flex;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: white;
+  height: 30px;
+  min-height: 30px;
+  width: 450px;
+  font-size: 15px;
+  font-family: "Nunito", sans-serif;
+  font-weight: lighter;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 450px;
+  max-height: 30px;
+  border: 1px solid;
+  
+}
+
+.popUpInputClass:focus {
+  outline: none;
+}
+
+.popUpInputClass::placeholder {
+  line-height: 30px;
+}
+
+textarea.popUpInputProf {
+  display: flex;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: white;
+  height: 30px;
+  min-height: 30px;
+  width: 450px;
+  font-size: 15px;
+  font-family: "Nunito", sans-serif;
+  font-weight: lighter;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 450px;
+  max-height: 30px;
+  border: 1px solid;
+ 
+}
+
+.popUpInputProf:focus {
+  outline: none;
+}
+
+.popUpInputProf::placeholder {
+  line-height: 30px;
+}
+
+.inputPart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  width: 100%;
+  height: 85%;
+
+}
+
+.popup .overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+
+.popup .contentP {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  width: 500px;
+  height: 460px;
+  z-index: 2;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+.popup.active .overlay {
+  display: block;
+}
+
+.popup.active .contentP {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.submit {
+  display: flex;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: #dfffd4;
+  border-radius: 0;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease-out;
+  font-family: "Nunito", sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  margin-right: 0px;
+  margin-left: auto;
+}
+
+.cancel {
+  display: flex;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: #ff9494;
+  border-radius: 0;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease-out;
+  font-family: "Nunito", sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  margin-left: 0px;
+}
+
+.cancel:focus {
+  outline: none;
+}
+
+.cancel:hover {
+  transform: scale(1.2);
+  transition-duration: 0.2s;
+}
+
+.submit:focus {
+  outline: none;
+}
+
+.submit:hover {
+  transform: scale(1.2);
+  transition-duration: 0.2s;
+}
+
+.cancelSubmit {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  width: 450px;
+  margin-top: 20px;
+}
+
+.addTitle {
+  font-family: "Nunito", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1px;
+}
+
+.reaction {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: rgba(255, 0, 0, 0);
+  transition: transform 1s ease-out;
+  line-height: 3;
+  font-size: 15px;
+}
+.reaction:hover {
+  transform: scale(1.5);
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+.reaction:focus {
+  outline: none;
+}
+
+.maxWidth {
+  width: 1075px !important;
+  overflow-wrap: break-word;
+  align-content: center;
+  font-weight: lighter;
+}
+
+.reactionParent {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-end;
+}
+
+.courseAndProf {
+  justify-content: flex-start;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+
+.expand {
+  transition: transform 1s ease-out;
+}
+
+/* .expand:hover {
+  transform: scale(1.01);
+  transition-duration: 1s;
+} */
+
+.stat {
+  font-family: Nunito, sans-serif;
+  font-size: 12px;
+  font-weight: lighter;
+  align-self: center;
+}
+
+.statAndEmoji {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.spaceOut {
+  margin-top: 20px;
+}
+
+.invalid {
+  background-color: white;
+  width: 60%;
+  height: 60px;
+  line-height: 60px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: Nunito, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.redditParent {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+a.reddit {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  /*background-color: #FBBF66;*/
+  width: 200px;
+  height: 75px;
+  line-height: 75px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  font-family: Nunito, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  transition: all 0.33s ease-out;
+}
+
+a.reddit:hover {
+  background-color: orange;
+  color: white;
+  transition-duration: 0.33s;
+  transition-property: all;
+}
+
+.profsContainer {
+  display: flex;
+  flex-direction: row;
+
+  align-content: center;
+  overflow-x: scroll;
+  font-size: 12px;
+  font-weight: lighter;
+  height: 60px;
+}
+
+
+.profBox {
+  background-color: #dffdd4;
+  margin: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.profBox:hover {
+  transform: scale(1.1);
+
+}
+
+.centerVertically {
+  margin-bottom: 3px;
+}
+
+.filterTitle {
+  font-size: 14px;
+  align-self: center;
+  margin-left: 20px;
+  margin-right: 10px;
+}
